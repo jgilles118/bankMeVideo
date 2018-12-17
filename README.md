@@ -18,7 +18,7 @@ Packages to install:
 5) Installation list: sudo apt install -y
 	php git vim apache2
 	mysql-server rabbitmq-server libapache2-mod-php7.2
-	php-amqp
+	php-amqp python3-pip
 
 6) sudo rabbitmq-plugins enable rabbitmq_management
 	sudo service rabbitmq (status | stop | start)
