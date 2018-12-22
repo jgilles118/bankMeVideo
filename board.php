@@ -15,10 +15,11 @@ $h = $_POST["phone2"];
 $i = $_POST["user"];
 $j = $_POST["passwd"];
 
+//Add new member to DB
 $gate = joinTeam($a,$b,$c,$d,$e,$f,$g,$h,$i,$j);
 
 if($gate == 1) { header("refresh:1;url='http://127.0.0.1/index.html'"); }
-if($gate == 0) { header("refresh:1;url='https://www.youtube.com"); }
+if($gate == 0) { header("refresh:6;url='http://127.0.0.1/init.html"); }
 
 
 ?>

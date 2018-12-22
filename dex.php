@@ -34,7 +34,6 @@ function getCredentials($un, $pw){
 
 function joinTeam($fn,$ln,$st,$ct,$sta,$zip,$ph1,$ph2,$un,$pw){
 
-	
 	//Connecting to DB
 	$server = "127.0.0.1";
 	$user = "jeministrator";
@@ -45,27 +44,26 @@ function joinTeam($fn,$ln,$st,$ct,$sta,$zip,$ph1,$ph2,$un,$pw){
 	if(!$keys){die("DB Connetion failed");}
 
 	//Insert member
-	$ins = "INSERT INTO User_1(name_1,name_2,name_3,name_4,name_5,name_6,name_7,name_8,name_9,name_10) VALUES('$fn','$ln','$st','$ct','$sta','$zip','$ph1','$ph2','$un','$pw')";
-	$sql = mysqli_query($keys,$ins);
+	$sql = "insert into User_1(name_1,name_2,name_3,name_4,name_5,name_6,name_7,name_8,name_9,name_10) values('$fn','$ln','$st','$ct','$sta','$zip','$ph1','$ph2','$un','$pw')";
 
-	if($keys->query($sql) == TRUE){ echo "Input successful"; }
+	if($keys->query($sql) === FALSE){ echo "Input failure" . $sql ." <br>" . $keys->error . "<br>"; }
 	
 	$sql = mysqli_query($keys,"select * from User_1 where name_7 = '$ph1'");
 	$row = mysqli_num_rows($sql);
 
 	if($row == 1) { 
 		echo"New member!!";
-		$sql = mysqli_query($keys,"insert into User_2(id, dir_1, dir_2) select id, name_9, name_10 from User_1 where name_7 = '$ph1'");
+		$sql = "insert into User_2(id, dir_1, dir_2) select id, name_9, name_10 from User_1 where name_7 = '$ph1'";
 		$keys->query($sql);
 
        		return 1; }
 	else { 
-		echo"Failed input!!";
+		echo"Failed input!!  ". $keys->error;
        		return 0; }
 
 	mysqli_close();
-	
-	
 
 
 }
+
+?>
