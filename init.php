@@ -13,7 +13,7 @@ $gates = getCredentials($user, $pswd);
 //Redirections
 if($gates == 0){
 	echo"Sign-in error...try again!";
-	header("refresh:1;url='127.0.0.1/init.html'");
+	header("refresh:1;url='http://127.0.0.1/init.html'");
 }
 if($gates == 1){
 	echo"Welcome to God's Garage";
