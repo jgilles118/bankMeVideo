@@ -3,10 +3,10 @@
 
 To view vlogs without interruptions
 
-This project is initially created using Kubuntu 18.04(LTS) linux distro.
+This project is initially created using ElementaryOS(LTS) linux distro.
 
 Packages to install:
-1) The new XAMP - Kubuntu OS, Apache2, MariaDB, Python3/PHP
+1) The new XAMP - Elementary OS, Apache2, MariaDB, Python3/PHP
 	Make sure to install mysql.connector drivers to connect python & the DB
 
 2) Ensure that the DB has an admin user & a test DB, table, atleast one field.
