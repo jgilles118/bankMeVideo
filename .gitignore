@@ -1,5 +1,7 @@
 index2.html
 recMQ.php
 sendMQ.php
-composer.phar
-vendor
+installer
+composer.*
+
+/vendor/
