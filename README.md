@@ -16,10 +16,12 @@ Packages to install:
 
 4) Main workstation is setup.
 
-5) Installation list: sudo apt install -y
+5) Installation list: sudo apt install -y **This is the list for 12/2018 - some packages my be updated
 	php git vim apache2
-	mysql-server rabbitmq-server libapache2-mod-php7.2
-	php-amqp python3-pip php-mysql
+	mysql-server rabbitmq-server 
+	libapache2-mod-php7.2
+	php-amqp python3-pip 
+	php-mysql php7.2-bcmath
 
 6) sudo rabbitmq-plugins enable rabbitmq_management
 	sudo service rabbitmq (status | stop | start)
@@ -37,7 +39,7 @@ Packages to install:
 				name_1 varchar(30) not null,
 				name_2 varchar(30) not null);
 	
-8) Using the directory you want to share in gitHub:
+8) Using the directory you want to share with gitHub:
 	git init
 	touch .gitignore
 	git config --global user.name "yourName"
@@ -51,6 +53,4 @@ Packages to install:
 	git commit -m "Commit message"
 	git push -f origin master --> Only for the first push: git push origin master --> For every push after
 
-	
-	
-
+9)

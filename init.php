@@ -16,7 +16,7 @@ if($gates == 0){
 	header("refresh:1;url='http://127.0.0.1/init.html'");
 }
 if($gates == 1){
-	echo"Welcome to God's Garage";
+	echo"Welcome to Ground Zero";
 	header("refresh:1;url='https://www.bing.com'");
 }
 
