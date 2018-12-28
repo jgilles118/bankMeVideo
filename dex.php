@@ -62,7 +62,7 @@ function joinTeam($fn,$ln,$em,$ph1,$un,$pw){
 
 	if($row == 1) { 
 		echo"New member!!";
-		$sql = "insert into User_2(id, dir_1, dir_2) select id, name_5, name_6 from User_1 where name_3 = '$em'";
+		$sql = "insert into User_2(uid, dir_1, dir_2) select id, name_5, name_6 from User_1 where name_3 = '$em'";
 		$keys->query($sql);
 
 		return 1; }

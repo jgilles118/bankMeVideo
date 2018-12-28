@@ -40,7 +40,7 @@ echo " [x] Sent $pos\n";
 	}
 	if($gates == 1){
 		echo"Welcome to Ground Zero";
-		header("refresh:1;url='https://www.bing.com'");
+		header("refresh:1;url='https://vimeo.com'");
 	}
 
 $channel->close();
