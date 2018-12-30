@@ -38,7 +38,7 @@ else {
 $msg = new AMQPMessage($pos);
 $channel->basic_publish($msg, '', 'regQue');
 
-echo " [x] Sent $a\n";
+echo " [x] Register: $gate\n";
 	//Redirections
 	if($gate == 1) { header("refresh:1;url='http://127.0.0.1/index.html'"); }
 

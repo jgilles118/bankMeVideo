@@ -32,7 +32,7 @@ else {
 $msg = new AMQPMessage($pos);
 $channel->basic_publish($msg, '', 'logQue');
 
-echo " [x] Sent $pos\n";
+echo " [x] Login: $gates \n";
 	//Redirections
 	if($gates == 0){
 		echo"Sign-in error...try again!";
