@@ -40,7 +40,7 @@ echo " [x] Login: $gates \n";
 	}
 	if($gates == 1){
 		echo"Welcome to Ground Zero";
-		header("refresh:1;url='https://vimeo.com'");
+		header("refresh:1;url='http://127.0.0.1/main.html'");
 	}
 
 $channel->close();
