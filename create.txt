@@ -1,0 +1,22 @@
+1) mysql_secure_installation
+
+
+
+akljhdf	Pay attention to prompts
+
+CREATE USER 'user'@'localhost' IDENTIFIED BY 'pAssed';
+
+GRANT ALL ON *.* TO 'user'@'localhost' IDENTIFIED BY 'pAsswd';
+
+2) Log on as the newly created admin.
+
+CREATE DATABASE dbname;
+
+USE dbname;
+
+CREATE TABLE user_Reg_1(id bigint(10) unsigned auto_increment primary key, name_1 varchar(30) not null, name_2 varchar(30) not null, name_3 varchar(50) not null, name_4 varchar(17) not null, name_5 varchar(50) not null, name_6 varchar(120) not null, anniv varchar(25)); 
+
+CREATE TABLE user_Log_2(uid bigint(10) unsigned, dir_1 varchar(50) not null, dir_2 varchar(120) not null, foreign key (uid) references user_tbl_1(id));
+
+CREATE TABLE user_Pay_3(id bigint(10) unsigned, bucket_1 varchar(18) not null, bucket_2 varchar(30) not null, bucket_3 varchar(30) not null, bucket_4 varchar(5) unsigned not null, anniv varchar(25));
+
