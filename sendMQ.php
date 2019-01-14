@@ -18,8 +18,8 @@ else {
 	//$pos = json_encode(['Name'=>'Jemz', 'Post'=>'The CEO, CTO, CFO']);
 	//FrontEnd input
 	$user = $_POST["user"];
-	$pswd = $_POST["passwd"];
-
+	$pswd = md5($_POST["passwd"]);
+	
 	$gates = getCredentials($user, $pswd);
 
 	$pos = array();
@@ -36,11 +36,11 @@ echo " [x] Login: $gates \n";
 	//Redirections
 	if($gates == 0){
 		echo"Sign-in error...try again!";
-		header("refresh:1;url='http://127.0.0.1/init.html'");
+		header("refresh:1;url='http://channel443.com/init.html'");
 	}
 	if($gates == 1){
 		echo"Welcome to Ground Zero";
-		header("refresh:1;url='http://127.0.0.1/main.html'");
+		header("refresh:1;url='http://channel443.com/main.html'");
 	}
 
 $channel->close();

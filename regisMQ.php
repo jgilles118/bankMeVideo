@@ -22,8 +22,9 @@ else {
 	$c = $_POST["email"];
 	$d = $_POST["phone"];
 	$e = $_POST["user"];
-	$f = $_POST["passwd"];
-
+	$f = md5($_POST["passwd"]);
+	//$f = crypt($_POST["passwd"]); this function changes everytime
+	
 	//Add new member to DB
 	$gate = joinTeam($a,$b,$c,$d,$e,$f);
 
@@ -40,9 +41,9 @@ $channel->basic_publish($msg, '', 'regQue');
 
 echo " [x] Register: $gate\n";
 	//Redirections
-	if($gate == 1) { header("refresh:1;url='http://127.0.0.1/index.html'"); }
+	if($gate == 1) { header("refresh:1;url='http://channel443.com/index.html'"); }
 
-	if($gate == 0) { header("refresh:3;url='http://127.0.0.1/init.html"); }	
+	if($gate == 0) { header("refresh:3;url='http://channel443.com/init.html"); }	
 
 $channel->close();
 $connection->close();
