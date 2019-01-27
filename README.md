@@ -53,4 +53,6 @@ Packages to install:
 	git commit -m "Commit message"
 	git push -f origin master --> Only for the first push: git push origin master --> For every push after
 
-9)
+9) Word Press will be used to create the FrontEnd:
+	Must confirm the compatable with iPage.com web hosting site.
+		iPage might want the customer to purchase WordPress thru their site.
