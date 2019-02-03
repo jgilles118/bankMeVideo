@@ -4,7 +4,7 @@
 To view vlogs without interruptions.
 To also offer SaaS to edit video, picture & music.
 
-This project is initially created using Ubuntu-18.04 OS(LTS) linux distro.
+This project is initially created using Ubuntu-18.04 OS(LTS) & Makulu linux distro.
 
 Packages to install:
 1) The new XAMP - Elementary OS, Apache2, MariaDB, Python3/PHP
