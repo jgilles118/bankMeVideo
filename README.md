@@ -52,6 +52,7 @@ Packages to install:
 	git add .
 	git commit -m "Commit message"
 	git push -f origin master --> Only for the first push: git push origin master --> For every push after
+	git remote set-url (--push,--add,--delete) master https://The Link
 
 9) Word Press will be used to create the FrontEnd:
 	Must confirm the compatable with iPage.com web hosting site.
